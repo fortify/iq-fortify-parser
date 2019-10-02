@@ -2,14 +2,14 @@
   [
     {
       "type": "template",
-      "title": "Vulnerability brief summary",
+      "title": "Vulnerability Brief Summary",
       "key": "brief",
       "templateId": "COLLAPSE",
       "dataType": "string"
     },
      {
       "type": "template",
-      "title": "Full Sonatype Scan report",
+      "title": "Full Sonatype Scan Report",
       "key": "scanReport",
       "templateId": "TITLEBOX",
       "items": [
@@ -156,7 +156,14 @@
           "key": "customAttributes.website",
           "templateId": "SIMPLE",
           "dataType": "string"
-          }
+          },
+        {
+          "type": "template",
+          "title": "Package URL",
+          "key": "customAttributes.packageUrl",
+          "templateId": "SIMPLE",
+          "dataType": "string"
+        }
         
       ]
       

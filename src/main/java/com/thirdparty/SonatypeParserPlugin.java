@@ -317,6 +317,9 @@ public class SonatypeParserPlugin implements ParserPlugin<CustomVulnAttribute> {
                 	fn.setWebsite(jsonParser.getText());
                 	break;
 
+                case PACKAGEURL:
+                    fn.setPackageUrl(jsonParser.getText());
+                    break;
                 // Skip unneeded fields:
                 default:
                     skipChildren(jsonParser);
@@ -405,6 +408,9 @@ public class SonatypeParserPlugin implements ParserPlugin<CustomVulnAttribute> {
         }    
         if (fn.getWebsite() != null) {
             vb.setStringCustomAttributeValue(WEBSITE, fn.getWebsite());
+        }
+        if (fn.getPackageUrl() != null) {
+            vb.setStringCustomAttributeValue(PACKAGEURL, fn.getPackageUrl());
         }
         if (fn.getIdentificationSource() != null) {
             vb.setStringCustomAttributeValue(IDENTIFICATION_SOURCE, fn.getIdentificationSource());

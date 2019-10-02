@@ -37,6 +37,7 @@ import static com.thirdparty.VulnAttribute.UNIQUE_ID;
 import static com.thirdparty.VulnAttribute.VERSION;
 import static com.thirdparty.VulnAttribute.VULNERABILITY_ABSTRACT;
 import static com.thirdparty.VulnAttribute.WEBSITE;
+import static com.thirdparty.VulnAttribute.PACKAGEURL;
 import static org.junit.Assert.assertNotNull;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -290,6 +291,8 @@ public class TestSonaTypeParser {
 		assertNotNull("Identification source field  is  null", fn.getIdentificationSource());
 		jsonGenerator.writeStringField(WEBSITE.attrName(), fn.getWebsite());
 		assertNotNull("Website field is  null", fn.getWebsite());
+		jsonGenerator.writeStringField(PACKAGEURL.attrName(), fn.getWebsite());
+		assertNotNull("PackageURL field is null", fn.getPackageUrl());
 		jsonGenerator.writeStringField(ISSUE.attrName(), fn.getIssue());
 		assertNotNull("Issue field is  null", fn.getIssue());
 		jsonGenerator.writeStringField(SOURCE.attrName(), fn.getSource());

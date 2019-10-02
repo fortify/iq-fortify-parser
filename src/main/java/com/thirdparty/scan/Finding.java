@@ -73,15 +73,25 @@ public class Finding {
 		this.identificationSource = identificationSource;
 	}
 
-	public String getWebsite() {
-		return website;
+	public String getPackageUrl() {
+		return packageUrl;
 	}
 
-	public void setWebsite(String website) {
-		this.website = website;
+	public void setPackageUrl(String packageUrl) {
+		this.packageUrl = packageUrl;
 	}
 
-	private String website ;
+	private String packageUrl ;
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    private String website ;
     
     public String getCataloged() {
 		return cataloged;

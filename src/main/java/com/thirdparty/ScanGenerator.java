@@ -268,6 +268,7 @@ public class ScanGenerator {
         jsonGenerator.writeStringField(CATALOGED.attrName(),fn.getCataloged());
         jsonGenerator.writeStringField(IDENTIFICATION_SOURCE.attrName(),fn.getIdentificationSource());
         jsonGenerator.writeStringField(WEBSITE.attrName(),fn.getWebsite());
+        jsonGenerator.writeStringField(PACKAGEURL.attrName(),fn.getPackageUrl());
         jsonGenerator.writeStringField(ISSUE.attrName(),fn.getIssue());
         jsonGenerator.writeStringField(SOURCE.attrName(),fn.getSource());
         jsonGenerator.writeStringField(CVECVSS3.attrName(),DemicalConverter.convertToString(fn.getCvecvss3()));

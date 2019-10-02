@@ -52,6 +52,7 @@ class FixedSampleScan {
     private static final String TEXT_BASE = "Example of a text encoded in the original scan to Base64. \n";
     private static final String RPT_URL = "http://iq-server.company.com/assets/index.html";
     private static final String WEB_URL =  "http://tomcat.apache.org";
+	private static final String PACKAGE_URL =  "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.6.1?type=jar";
     private static final String ARTIFACT ="artifact-c834c327-4cee-4420-b1f8-b24bea95fee3/00000002.jar";
     private static final String COMMENT = "fixed in build 300.845200451";
     private static final String TEST = "sample";
@@ -97,6 +98,7 @@ class FixedSampleScan {
 	        fn.setTextBase64(TEXT_BASE + LONG_TEXT);
 	        fn.setReportUrl(RPT_URL);
 	        fn.setWebsite(WEB_URL);
+			fn.setPackageUrl(PACKAGE_URL);
 	        findingList.add(fn);
         }
 
