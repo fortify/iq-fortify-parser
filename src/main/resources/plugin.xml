@@ -4,7 +4,7 @@
         id="com.sonatype.iq.parser" api-version="1.0">
     <plugin-info>
         <name>Sonatype Vunerabilty Parser</name>
-        <version><!--VERSION-->0.0<!--/VERSION--></version>
+        <version><!--VERSION-->19.1<!--/VERSION--></version>
         <data-version>1</data-version>
         <vendor name="Sonatype" url="https://www.sonatype.com"/>
         <description>Sonatype scan result parser</description>
@@ -25,7 +25,7 @@
         <engine-type>SONATYPE</engine-type>
         <supported-engine-versions>[2.2, 4.3]</supported-engine-versions>
         <view-template location="/viewtemplate/SonatypeTemplate.json">
-            <description>Sonatype Vulnerability</description>
+            <description>Vulnerable OSS (A9)</description>
         </view-template>
     </issue-parser>
 </plugin>
