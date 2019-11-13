@@ -313,9 +313,10 @@ public class SonatypeParserPlugin implements ParserPlugin<CustomVulnAttribute> {
                 	fn.setIdentificationSource(jsonParser.getText());
                 	break;
 
-                case WEBSITE:
+            /**    case WEBSITE:
                 	fn.setWebsite(jsonParser.getText());
-                	break;
+                	break; 
+              */
 
                 case PACKAGEURL:
                     fn.setPackageUrl(jsonParser.getText());
