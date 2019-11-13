@@ -47,7 +47,7 @@ public enum CustomVulnAttribute implements com.fortify.plugin.spi.VulnerabilityA
     CATALOGED(VulnAttribute.CATALOGED.attrName(),AttrType.STRING),
     MATCHSTATE(VulnAttribute.MATCHSTATE.attrName(),AttrType.STRING),
     IDENTIFICATION_SOURCE(VulnAttribute.IDENTIFICATION_SOURCE.attrName(),AttrType.STRING),
-    WEBSITE(VulnAttribute.WEBSITE.attrName(),AttrType.STRING),
+    /*WEBSITE(VulnAttribute.WEBSITE.attrName(),AttrType.STRING),*/
     PACKAGEURL(VulnAttribute.PACKAGEURL.attrName(),AttrType.STRING),
     
     ;
