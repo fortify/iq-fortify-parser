@@ -407,9 +407,9 @@ public class SonatypeParserPlugin implements ParserPlugin<CustomVulnAttribute> {
         if (fn.getMatchState() != null) {
             vb.setStringCustomAttributeValue( MATCHSTATE, fn.getMatchState());
         }    
-        if (fn.getWebsite() != null) {
+        /**if (fn.getWebsite() != null) {
             vb.setStringCustomAttributeValue(WEBSITE, fn.getWebsite());
-        }
+        }*/
         if (fn.getPackageUrl() != null) {
             vb.setStringCustomAttributeValue(PACKAGEURL, fn.getPackageUrl());
         }
